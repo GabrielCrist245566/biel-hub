@@ -6326,10 +6326,10 @@ end)
 
 addcmd('discord', {'support', 'help'}, function(args, speaker)
 	if everyClipboard then
-		toClipboard('https://discord.com/invite/dYHag43eeU')
-		notify('Discord Invite', 'Copied to clipboard!\ndiscord.gg/dYHag43eeU')
+		toClipboard('https://discord.com/invite/5TmmPexPkP')
+		notify('Discord Invite', 'Copied to clipboard!\nhttps://discord.gg/5TmmPexPkP')
 	else
-		notify('Discord Invite', 'discord.gg/dYHag43eeU')
+		notify('Discord Invite', 'discord.gg/5TmmPexPkP')
 	end
 	if httprequest then
 		httprequest({
@@ -6342,7 +6342,7 @@ addcmd('discord', {'support', 'help'}, function(args, speaker)
 			Body = HttpService:JSONEncode({
 				cmd = 'INVITE_BROWSER',
 				nonce = HttpService:GenerateGUID(false),
-				args = {code = 'dYHag43eeU'}
+				args = {code = '5TmmPexPkP'}
 			})
 		})
 	end
